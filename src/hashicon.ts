@@ -4,7 +4,7 @@ export class HashIcon {
 
     private options: Options;
 
-    constructor(inputtedOptions: any) {
+    constructor(inputtedOptions: any = null) {
         this.options = new Options(inputtedOptions);
     }
 
