@@ -64,9 +64,12 @@ export class HashIcon {
     }
 
     private hashCode(inputString: string): number {
-        return inputString.split('')
-                          .map(c => c.charCodeAt(0))
-                          .reduce((prev, curr) => ((prev << 5) + prev) + curr, 5381);
+        let hash = 5381;
+        for (let i = 0; i < inputString.length; i++) {
+            hash = ((hash << 5) + hash) + inputString.charCodeAt(i);
+            hash = hash & hash;
+        }
+        return hash;
     }
 
     private intToRGB(i: number): string {
