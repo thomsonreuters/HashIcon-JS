@@ -52,7 +52,7 @@ describe('Hash Icon', () => {
                                  [true, true, false, true, false], 
                                  [false, true, false, false, false], 
                                  [false, true, true, true, true]];
-        let expectedColour = '#5bda43';
+        let expectedColour = '#05bda4';
 
         testStructure(input, expectedStructure)
             .then(_ => testColour(input, expectedColour))

@@ -71,7 +71,9 @@ export class HashIcon {
         for (var i = 0; i < view.byteLength; i += 4) {
             var value = view.getUint32(i);  // 4 bytes
             var stringValue = value.toString(16);
-            hex.push(stringValue);
+            var padding = '00000000'
+            var paddedValue = (padding + stringValue).slice(-padding.length)
+            hex.push(paddedValue);
         }
         let joinedHex = hex.join("");
         return this.padAndTrimString("0", length, joinedHex);
