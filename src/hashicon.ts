@@ -82,8 +82,8 @@ export class HashIcon {
     private bin(buffer: ArrayBuffer, length: number): string {
         var bin = [];
         var view = new DataView(buffer);
-        for (var i = 0; i < view.byteLength; i += 4) {
-            var value = view.getUint32(i);  // 4 bytes
+        for (var i = 0; i < view.byteLength; i += 1) {
+            var value = view.getUint8(i);
             var stringValue = value.toString(2);
             bin.push(stringValue);
         }
@@ -94,5 +94,4 @@ export class HashIcon {
     private padAndTrimString(padChar: string, length: number, inputString: string): string {
         return (inputString + padChar.repeat(length)).slice(0, length);
     }
-
 }

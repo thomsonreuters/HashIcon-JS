@@ -36,8 +36,8 @@ describe('Hash Icon', () => {
         let expectedStructure = [[true, false, true, false, false], 
                                  [false, false, false, true, true], 
                                  [false, false, false, false, true], 
-                                 [true, false, false, false, false],
-                                 [true, true, true, false, true]];
+                                 [true, true, true, true, false], 
+                                 [true, false, false, true, false]];
         let expectedColour = '#a0c30e';
 
         testStructure(input, expectedStructure)
@@ -50,8 +50,8 @@ describe('Hash Icon', () => {
         let expectedStructure = [[true, false, true, true, false], 
                                  [true, true, true, true, false], 
                                  [true, true, false, true, false], 
-                                 [false, true, false, false, false], 
-                                 [false, true, true, true, true]];
+                                 [false, true, false, false, true], 
+                                 [true, true, true, false, true]];
         let expectedColour = '#05bda4';
 
         testStructure(input, expectedStructure)
@@ -65,7 +65,7 @@ describe('Hash Icon', () => {
                                  [false, true, true, true, false], 
                                  [true, true, false, false, false], 
                                  [false, true, true, false, false], 
-                                 [false, true, false, false, false]];
+                                 [false, true, false, false, true]];
         let expectedColour = '#e3b0c4';
 
         testStructure(input, expectedStructure)
