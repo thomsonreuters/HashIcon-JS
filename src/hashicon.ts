@@ -60,7 +60,7 @@ export class HashIcon {
         return "#" + this.hex(input, 6);
     }
 
-    private sha256Hash(inputstring: string): PromiseLike<ArrayBuffer> {
+    public sha256Hash(inputstring: string): PromiseLike<ArrayBuffer> {
         var buffer = new TextEncoder("utf-8").encode(inputstring);
         return window.crypto.subtle.digest("SHA-256", buffer);
     }
@@ -89,8 +89,8 @@ export class HashIcon {
         return this.padAndTrimString("0", length, joinedBin);
     }
 
-    private padAndTrimString(padChar: string, maxLength: number, inputString: string): string {
-        return (inputString + padChar.repeat(maxLength)).slice(0, maxLength);
+    private padAndTrimString(padChar: string, length: number, inputString: string): string {
+        return (inputString + padChar.repeat(length)).slice(0, length);
     }
 
 }
