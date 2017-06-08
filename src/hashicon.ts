@@ -19,8 +19,9 @@ export class HashIcon {
 
     private drawImage(structure: boolean[][], colour: string, container: HTMLElement) {
         let newImage = document.createElementNS(Options.svgNs, "svg");
-        newImage.setAttributeNS(null, 'height', this.options.height);
-        newImage.setAttributeNS(null, 'width', this.options.width);
+        newImage.setAttributeNS(null, 'viewBox', '0 0 100 100');
+        newImage.setAttributeNS(null, 'preserveAspectRatio', 'xMinYMin meet');
+
 
         let blockSizeWidth = 100 / this.options.amountCols;
         let blockSizeHeight = 100 / this.options.amountRows;
