@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git@git.sami.int.thomsonreuters.com:nopass/hashicon-js.git"
   },
-  "author": "",
+  "author": "James Cross",
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
