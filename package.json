@@ -1,7 +1,7 @@
 {
   "name": "hashicon",
   "version": "1.0.0",
-  "description": "Draw an image based on a string",
+  "description": "JS library which takes in a string and draws a pictorial representation of that string",
   "main": "src/hashicon.ts",
   "scripts": {
     "build": "node_modules/webpack/bin/webpack.js --progress --hide-modules --config config/webpack.config.js",
