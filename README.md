@@ -12,12 +12,16 @@
 # Usage
 
 * Include the library (require, import)
-* Construct an instance of it with optional parameters (see below for the options) - ```var hashCode = new HashCode(options)```
-* Draw the image - ```hashCode.drawString("inputtedString", document.getElementById("imageContainer"))```
+* Construct an instance of it with optional parameters (see below for the options) 
+   
+   ```var hashCode = new HashCode(options)```
+* Draw the image for string "inputtedString" in element "imageContainer"
+
+   ```hashCode.drawString("inputtedString", document.getElementById("imageContainer"))```
 
 ## Options
 
-Currently the Options object can look like the following:
+The options object can look like the following:
 
 ```
 new HashCode({
@@ -27,10 +31,14 @@ new HashCode({
 ```
 
 # Build
-* Build (using webpack) - run ```npm run build```
+* Build (using webpack)
+
+   ```npm run build```
 
 # Testing
-* Unit tests are provided - run ```npm test```
+* Unit tests are provided
+
+   ```npm test```
 
 # Roadmap
 * No further development expected
