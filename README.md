@@ -9,7 +9,7 @@
 
 * Include the library (require, import)
    
-   ```import * as HashIcon from 'hashicon';```
+   ```import HashIcon from 'hashicon';```
 
 * Construct an instance of it with optional parameters (see below for the options) 
    
