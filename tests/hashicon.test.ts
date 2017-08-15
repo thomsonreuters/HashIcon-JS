@@ -1,4 +1,4 @@
-import {HashIcon} from '../src/hashicon';
+import HashIcon from '../src/hashicon';
 
 describe('Hash Icon', () => {
     var hashIcon: HashIcon;

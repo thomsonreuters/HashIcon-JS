@@ -1,12 +1,40 @@
 <html>
     <head>
         <script src="../dist/hashicon.js"></script>
-
-        <script>
-            var hashIcon = require('hashicon');
-            console.log(hashIcon);
-        </script>
+        <style>
+            .container {
+                width: 100px;
+                margin: 10px;
+                border: 1px solid lightgray;
+                display: inline-block;
+            }
+        </style>
     </head>
 
-    <div id="example1"></div>
+    <div id="example1" class="container"></div>
+    <div id="example2" class="container"></div>
+    <div id="example3" class="container"></div>
+    <div id="example4" class="container"></div>
+    <div id="example5" class="container"></div>
+
+    <script>
+        var hashIcon = new HashIcon();
+        hashIcon.drawString('test', '#example1');   // Simple example
+        hashIcon.drawString('test2', '#example2');  // Simple example x2
+        hashIcon.drawString('23a4s5d6f7g8h9j0h87gf6d5s4rd6tcfy7vub9in0jo-kj0ih9uby8v7tc6rx5e', '#example3'); // Long string example
+
+        // Example with smaller amount of blocks
+        var hashIcon2 = new HashIcon({
+            amountRows: 3,
+            amountCols: 3
+        });
+        hashIcon2.drawString('HashIcon', '#example4');
+
+        // Example with larger amount of blocks
+        var hashIcon3 = new HashIcon({
+            amountRows: 10,
+            amountCols: 10
+        });
+        hashIcon3.drawString('Another Example', '#example5');
+    </script>
 </html>

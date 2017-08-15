@@ -23,6 +23,6 @@
     "karma-jasmine": "^1.1.0",
     "karma-typescript": "^3.0.2",
     "typescript": "^2.3.2",
-    "webpack": "^2.5.1"
+    "webpack": "^3.5.4"
   }
 }

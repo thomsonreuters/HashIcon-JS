@@ -3,6 +3,8 @@
 ## Overview
 * JS library which takes in a string and draws a pictorial representation of that string
 
+![Example Ouput](./examples/output.png)
+
 ## Contact
 
 [James Cross](mailto:james.cross@thomsonreuters.com) - [The Hub](https://thehub.thomsonreuters.com/people/6037533) - [Git](https://git.sami.int.thomsonreuters.com/james.cross)
@@ -18,6 +20,8 @@
 * Draw the image for string "inputtedString" in element "imageContainer"
 
    ```hashCode.drawString("inputtedString", document.getElementById("imageContainer"))```
+
+See the ```examples``` folder for a very simple usage of the library.
 
 ## Options
 

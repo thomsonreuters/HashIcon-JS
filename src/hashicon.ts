@@ -1,15 +1,8 @@
-/* *|-----------------------------------------------------------------------------
-   *|            This source code is provided under the Apache 2.0 license      --
-   *|  and is provided AS IS with no warranty or guarantee of fit for purpose.  --
-   *|                See the project's LICENSE.md for details.                  --
-   *|           Copyright Thomson Reuters 2017. All rights reserved.            --
-   *|----------------------------------------------------------------------------- */
-
-import {Options} from './options';
+import Options from './options';
 
 declare var TextEncoder;
 
-export class HashIcon {
+export default class HashIcon {
 
     private options: Options;
 
@@ -17,14 +10,29 @@ export class HashIcon {
         this.options = new Options(inputtedOptions);
     }
 
-    public drawString(inputtedString: string, container: HTMLElement) {
+    public drawString(inputtedString: string, container: any) {
+        let containerElement: Node;
+
+        if (typeof container === 'string' || container instanceof String) {
+            containerElement = document.querySelector(<string>container);
+            if (containerElement == null) {
+                throw new Error(`The container element ${container} does not exist`);
+            }
+        }
+        else if (container instanceof Node) {
+            containerElement = container;
+        }
+        else {
+            throw new Error('2nd parameter must be a string or an Element');
+        }
+
         this.sha256Hash(inputtedString)
             .then(buffer => this.drawImage(this.getImageStructureForString(buffer),
                                            this.getImageColourForString(buffer), 
-                                           container));
+                                           containerElement));
     }
 
-    private drawImage(structure: boolean[][], colour: string, container: HTMLElement) {
+    private drawImage(structure: boolean[][], colour: string, container: Node) {
         let newImage = document.createElementNS(Options.svgNs, "svg");
         newImage.setAttributeNS(null, 'viewBox', '0 0 100 100');
         newImage.setAttributeNS(null, 'preserveAspectRatio', 'xMinYMin meet');
