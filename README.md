@@ -5,12 +5,6 @@
 
 ![Example Ouput](./examples/output.png)
 
-## Contact
-
-[James Cross](mailto:james.cross@thomsonreuters.com) - [The Hub](https://thehub.thomsonreuters.com/people/6037533) - [Git](https://git.sami.int.thomsonreuters.com/james.cross)
-
-[Mario Morgado](mailto:Mario.Morgado@thomsonreuters.com) - [The Hub](https://thehub.thomsonreuters.com/people/6028603) - [Git](https://git.sami.int.thomsonreuters.com/Mario.Morgado)
-
 # Usage
 
 * Include the library (require, import)
@@ -22,7 +16,7 @@
    ```var hashCode = new HashCode(options)```
 * Draw the image for string "inputtedString" in element "imageContainer"
 
-   ```hashCode.drawString("inputtedString", document.getElementById("imageContainer"))```
+   ```hashCode.drawString("inputtedString", "#imageContainer")```
 
 See the ```examples``` folder for a very simple usage of the library.
 
@@ -38,7 +32,7 @@ new HashCode({
 ```
 
 # Build
-* Build (using webpack)
+* Build (using tsc and webpack)
 
    ```npm run build```
 
@@ -46,6 +40,22 @@ new HashCode({
 * Unit tests are provided
 
    ```npm test```
+
+# Developing
+
+If you have discover any issues with regards to this project, please feel free to create an Issue.
+
+If you have coding suggestions that you would like to provide for review, please create a Pull Request.
+
+We will review issues and pull requests to determine any appropriate changes.
+
+# Contributing
+In the event you would like to contribute to this repository, it is required that you read and sign the following:
+
+* Individual Contributor License Agreement.pdf
+* Entity Contributor License Agreement.pdf
+
+Please email a signed and scanned copy to `sdkagreement@thomsonreuters.com`. If you require that a signed agreement has to be physically mailed to us, please email the request for a mailing address and we will get back to you on where you can send the signed documents.
 
 # Roadmap
 * No further development expected
