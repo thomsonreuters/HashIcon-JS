@@ -200,9 +200,9 @@ var Options = (function () {
             this.amountCols = inputtedOptions.amountCols;
         }
     }
+    Options.svgNs = "http://www.w3.org/2000/svg";
     return Options;
 }());
-Options.svgNs = "http://www.w3.org/2000/svg";
 exports.default = Options;
 
 
