@@ -50,12 +50,38 @@ If you have coding suggestions that you would like to provide for review, please
 We will review issues and pull requests to determine any appropriate changes.
 
 # Contributing
-In the event you would like to contribute to this repository, it is required that you read and sign the following:
+## Got a question or problem?
 
-* Individual Contributor License Agreement.pdf
-* Entity Contributor License Agreement.pdf
+The best way to contact us is to open an issue on GitHub. We will be monitoring these and will respond as soon as we can.
 
-Please email a signed and scanned copy to `sdkagreement@thomsonreuters.com`. If you require that a signed agreement has to be physically mailed to us, please email the request for a mailing address and we will get back to you on where you can send the signed documents.
+## Found a bug?
+
+If you found a bug in the code you can help us in one of two ways:
+
+* Open a bug report issue on GitHub
+* Fix the bug and submit a Pull Request (please follow the below guidelines)
+
+## Missing a feature?
+
+If there is a feature you think should be in this library, you can help in one of two ways:
+
+* Open an issue in GitHub and request the feature
+* Implement the feature and submit a Pull Request (please follow the below guidelines)
+
+## Submitting a Pull Request
+
+If you would like to submit a Pull Request (bug fix of new feature) to this repo, please consider the below points:
+
+* You will need to read and sign the Contributer License Agreement
+  * If you are an Individual: Individual Contributor License Agreement.pdf
+  * If you are a corporation: Entity Contributor License Agreement.pdf
+  * Please print, sign, scan and send the scanned copy to `sdkagreement@thomsonreuters.com`
+* Please do your code change in a new branch and then submit a Pull Request into master
+* Please attempt to fit in with the current code standard in the repo
+* Please make your commit messages meaningful
+* Please make sure all the tests run and pass before submitting the Pull Request
+* Please add any new tests to cover the bug or feature
+* After the Pull Request is merged to master, please delete your branch
 
 # Roadmap
 * No further development expected
