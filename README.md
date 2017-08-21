@@ -40,15 +40,7 @@ new HashCode({
 * Unit tests are provided
 
    ```npm test```
-
-# Developing
-
-If you have discover any issues with regards to this project, please feel free to create an Issue.
-
-If you have coding suggestions that you would like to provide for review, please create a Pull Request.
-
-We will review issues and pull requests to determine any appropriate changes.
-
+   
 # Contributing
 ## Got a question or problem?
 
