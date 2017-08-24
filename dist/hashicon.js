@@ -79,6 +79,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 "use strict";
 
+//   *|-----------------------------------------------------------------------------
+//   *|            This source code is provided under the Apache 2.0 license      --
+//   *|  and is provided AS IS with no warranty or guarantee of fit for purpose.  --
+//   *|                See the project's LICENSE.md for details.                  --
+//   *|           Copyright Thomson Reuters 2017. All rights reserved.            --
+//   *|-----------------------------------------------------------------------------
 Object.defineProperty(exports, "__esModule", { value: true });
 var options_1 = __webpack_require__(1);
 var HashIcon = (function () {
@@ -183,6 +189,12 @@ exports.default = HashIcon;
 
 "use strict";
 
+//   *|-----------------------------------------------------------------------------
+//   *|            This source code is provided under the Apache 2.0 license      --
+//   *|  and is provided AS IS with no warranty or guarantee of fit for purpose.  --
+//   *|                See the project's LICENSE.md for details.                  --
+//   *|           Copyright Thomson Reuters 2017. All rights reserved.            --
+//   *|-----------------------------------------------------------------------------
 Object.defineProperty(exports, "__esModule", { value: true });
 var Options = (function () {
     function Options(inputtedOptions) {
@@ -200,9 +212,9 @@ var Options = (function () {
             this.amountCols = inputtedOptions.amountCols;
         }
     }
-    Options.svgNs = "http://www.w3.org/2000/svg";
     return Options;
 }());
+Options.svgNs = "http://www.w3.org/2000/svg";
 exports.default = Options;
 
 
